@@ -109,8 +109,8 @@ if __name__ == "__main__":
     img='img/3.png'
 #prompt setup
     input_point,input_label = prompt_for_sam(img)
-    input_point= input_point[0:2:]
-    input_label=input_label[0:2:]
+    input_point= input_point[0::2]
+    input_label=input_label[0::2]
 # --->model
 # wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 # wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth
